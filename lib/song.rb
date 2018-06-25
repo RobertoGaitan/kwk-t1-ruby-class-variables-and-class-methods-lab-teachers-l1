@@ -35,8 +35,10 @@ class Song
     genre_hash = Hash.new
     @@genres.each do |genres|
       if genre_hash[genres] = nil
+        puts "nil"
         genre_hash[genres] = 1
       else
+        puts "found"
         genre_hash[genres] += 1
       end
     end
