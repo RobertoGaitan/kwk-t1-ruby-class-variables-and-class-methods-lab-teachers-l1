@@ -34,7 +34,7 @@ class Song
   def self.genre_count
     genre_hash = Hash.new
     @@genres.each do |genres|
-      if genre_hash[genres] = nil
+      if genre_hash[genres] == nil
         puts "nil"
         genre_hash[genres] = 1
       else
@@ -48,7 +48,7 @@ class Song
   def self.artist_count
     artist_hash = Hash.new
     @@artists.each do |artists|
-      if artist_hash[artists] = nil
+      if artist_hash[artists] == nil
         artist_hash[artists] = 1
       else
         artist_hash[artists] += 1
