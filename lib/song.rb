@@ -37,7 +37,7 @@ class Song
       if genre_hash[genres] = nil
         genre_hash[genres] = 1
       else
-        genre_hash[genres] += 1
+        genre_hash[genres] = 1
       end
     end
     genre_hash
@@ -49,7 +49,7 @@ class Song
       if artist_hash[artists] = nil
         artist_hash[artists] = 1
       else
-        artist_hash[artists] += 1
+        artist_hash[artists] = 1
       end
     end
     artist_hash
